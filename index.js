@@ -23,6 +23,11 @@ client.on('ready', () => {
     console.log(`in ${client.guilds.size} servers `)
     console.log(`[Codes] ${client.users.size}`)
 });
+      client.on('ready', () => {
+              client.user.setActivity("Type Splay ", {type: 'LISTENING'});
+     
+      });
+
 const prefix = "S"
 client.on('message', async msg => {
     if (msg.author.bot) return undefined;
